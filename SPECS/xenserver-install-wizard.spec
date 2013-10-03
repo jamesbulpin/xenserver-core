@@ -2,12 +2,12 @@
 
 Summary: a simple wizard to configure a XenServer
 Name:    xenserver-install-wizard
-Version: 0.2.25
+Version: 0.2.23.1
 Release: 1
 Group:   System/Hypervisor
 License: LGPL+linking exception
-URL:  http://github.com/djs55/xenserver-install-wizard
-Source0: https://github.com/djs55/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
+URL:  http://github.com/jamesbulpin/xenserver-install-wizard
+Source0: https://github.com/jamesbulpin/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Requires: python newt xapi-python-devel python-argparse
 
@@ -33,12 +33,6 @@ rm -rf %{buildroot}
 %{_bindir}/xenserver-install-wizard
 
 %changelog
-* Thu Sep 26 2013 David Scott <dave.scott@eu.citrix.com>
-- Update to 0.2.25
-
-* Wed Sep 25 2013 David Scott <dave.scott@eu.citrix.com>
-- Update to 0.2.24
-
 * Fri Sep 20 2013 David Scott <dave.scott@eu.citrix.com>
 - Update to 0.2.23
 
