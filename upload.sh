@@ -1,6 +1,8 @@
 #!/bin/sh
 
-URL=dscott@drall.uk.xensource.com:public_html/xapi/
+USERNAME=$(whoami)
+
+URL=$USERNAME@drall.uk.xensource.com:public_html/xapi/
 
 rm -f RPMS/x86_64/*.log
 rm -f RPMS/x86_64/*_pkgs
